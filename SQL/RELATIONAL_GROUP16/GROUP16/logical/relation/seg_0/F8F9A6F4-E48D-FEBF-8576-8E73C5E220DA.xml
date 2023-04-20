@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CAMPAIGNS_FK_VERTICAL" directorySegmentName="seg_0" id="F8F9A6F4-E48D-FEBF-8576-8E73C5E220DA">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>BB7ABBE8-7A45-840F-8FA5-832FAC00557A</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<sourcePk>332A7753-FBC7-EDA8-51D1-DE97C016753F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>54891C23-EBC6-6345-70B8-8953DF6345C6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7EC7547B-466B-5C20-AF00-73DB9A09268F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

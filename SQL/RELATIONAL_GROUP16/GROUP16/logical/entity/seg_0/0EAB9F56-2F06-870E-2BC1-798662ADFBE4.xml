@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EAB9F56-2F06-870E-2BC1-798662ADFBE4" name="CLIENTS">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>161DE5AB-D061-A3A4-F947-3F7420FC795D</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CLIENT ID" id="F545860E-0C3C-E309-CE84-F177775FB82B">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>FDB0A539-A4B8-691D-70A8-C04D84D22EFF</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="38169F76-FC95-91ED-4761-9249F6E6E6AE">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>4174E7A8-743A-8B84-8252-4E04293B700A</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SURNAME" id="8992C2F4-248D-1FDD-01FD-9DD250C15F6F">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>C3132FC8-9EE8-08BB-FE82-43E7261EB905</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="29466F9B-7390-244C-C14C-1EBD0369B848">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>4FB12E2B-0BEB-2CE8-14E7-5A0EBB87D116</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHONE" id="63C1AB97-9446-8D15-1CA0-C725BF11F97C">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>524D1BE5-7F50-570A-7264-CD869D976F54</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE ID" id="A774FBCA-1C02-CE4F-D71E-D795467DF4F3">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>1D41A3A1-CAA9-45AB-9A0D-F54A63DE33CA</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<referedAttribute>AAE1EB9A-F687-1513-6BA0-C47FE86FB3AC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPAIGN ID" id="19AF0ECC-E58D-8D90-1625-5FE7418C947D">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>87CC5BB2-C097-5148-F0B9-27F80DC01CDB</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3C0AFBE0-979C-A511-6BAF-2652D3F5E4A4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E87BA604-ADA3-CBC2-E609-EF106C6DE58B" name="CLIENTS PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>636E869D-1047-4345-CC8D-74D1C3096057</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F545860E-0C3C-E309-CE84-F177775FB82B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

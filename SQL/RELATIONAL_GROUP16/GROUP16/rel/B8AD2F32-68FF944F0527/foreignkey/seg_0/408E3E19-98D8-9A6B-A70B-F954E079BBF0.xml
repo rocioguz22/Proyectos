@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="408E3E19-98D8-9A6B-A70B-F954E079BBF0" containerWithKeyObject="7A68B6A8-1DD6-867B-64A0-7DB5F5DBEC12" localFKIndex="DA390546-223C-EBA0-FBCD-07EADF9542D4" name="COMPANIES_FK_CAMPAIGNS">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>6FBC9C1B-4E5A-AD17-BC54-D54D9876BE3D</importedID>
+<referredTableLongName>UBD3282.CAMPAIGNS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>041D8066-6E42-5718-10EE-49FE63ECF5CC</referredTableID>
+<keyObject>900668D7-CFED-8F3E-1DF0-111478FE3BF1</keyObject>
+<referredKeyID>900668D7-CFED-8F3E-1DF0-111478FE3BF1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CAMPAIGN_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

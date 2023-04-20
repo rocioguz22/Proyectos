@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="GROUP16" id="533807E4-0FDA-B636-A14A-32903C2D2155" version="3.5">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:25 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>533807E4-0FDA-B636-A14A-32903C2D2155</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="09F9DDDB-29C2-06DA-EB33-B323693646F6">
+<designStoragePath>C:\GRUPO16</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

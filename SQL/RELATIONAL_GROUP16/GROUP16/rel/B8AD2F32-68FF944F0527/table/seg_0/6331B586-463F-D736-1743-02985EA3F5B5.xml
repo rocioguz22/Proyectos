@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6331B586-463F-D736-1743-02985EA3F5B5" schemaObject="BEB9B70B-4009-C88D-3A88-634F088BA497" name="VERTICAL">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>4EB704B5-C42C-B8ED-BE34-9635BB5E3897</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VERTICAL" id="04731E0A-825D-05F8-2EA2-7FC4633B7904">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>3B3B1797-E5D9-B097-AAD7-43262680C2E2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C8D41A3-66CF-66A9-28CE-9800E8C6B795" name="VERTICAL_PK">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>6862E7CE-9C38-3870-7A27-6F32A4634D92</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04731E0A-825D-05F8-2EA2-7FC4633B7904"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

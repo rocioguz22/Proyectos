@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A82E58CC-7238-8DEB-42DD-2F5D6C758C2E" name="EVENTS">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>8E5D3CE9-ED2C-78FC-ECDA-7ACB16767871</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EVENT NAME" id="52A0B635-ED45-E2E6-CFDE-7A83E6A1DEC8">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>EDF4A97F-A4BE-BD22-7A32-3B681460882E</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT DATE" id="D477CF81-A0AB-0084-0FB9-4015D75E344F">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>93B0CBEA-2BBF-0713-A497-3DF8B81F669B</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>882FAB9A-999F-3B83-01AA-0F45724BB1A4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT CONTACT" id="34A6C852-48CE-CE04-545C-644754851A00">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>8547C8BF-76A6-84E6-E858-E1A213739996</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMPANY NAME" id="36795E8D-E57B-9A92-F017-02B27A0D1DF2">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>5E6678F1-D49F-760B-838F-A1B3B6A96B3A</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E26D676D-8ED3-7428-560C-673C50030BEB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLIENT ID" id="B7959AD0-71C9-C22C-7EE9-EE2AD7129C4D">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>F98EBB25-D8D6-12EF-B4AC-ACD6393FE082</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F545860E-0C3C-E309-CE84-F177775FB82B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ATTENDEE NAME" id="14FF0716-AE59-0C2F-C147-3690A4B2FA7D">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>3A4E35F3-38F3-2441-E45B-C989B012B313</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT ID" id="2221E7B0-8B04-839D-A4C4-A64CFFD64D02">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>322D9FDE-FCA7-F01D-DE2E-EDB99A06FB2A</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ATTENDEES NUMBER" id="5385A97E-BE6F-1579-5F9B-44760C75FE3A">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>CC5BE30F-8370-BD34-A0FA-7050B0747F39</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPAIGN ID" id="D6F34D57-40E7-ECA5-C83E-E92FF650D955">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>B8198C1D-D6F6-D456-B154-0AF25513ED2F</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<referedAttribute>3C0AFBE0-979C-A511-6BAF-2652D3F5E4A4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C5050FA-1A25-A9D1-C699-08F96D213CE8" name="EVENTS PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>2AC35DF3-BFE7-6A02-709E-0846A215F425</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2221E7B0-8B04-839D-A4C4-A64CFFD64D02</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

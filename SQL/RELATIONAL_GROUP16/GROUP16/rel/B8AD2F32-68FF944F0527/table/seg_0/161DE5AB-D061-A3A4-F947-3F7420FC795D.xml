@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="161DE5AB-D061-A3A4-F947-3F7420FC795D" schemaObject="BEB9B70B-4009-C88D-3A88-634F088BA497" name="CLIENTS">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>97A52195-FCEB-530C-E40B-26799838676A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENT_ID" id="FDB0A539-A4B8-691D-70A8-C04D84D22EFF">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>4FCA7E7C-B979-4621-6A6F-C755C713D512</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="4174E7A8-743A-8B84-8252-4E04293B700A">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>FB2E565C-8541-EACC-4AF6-8596B35D1228</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SURNAME" id="C3132FC8-9EE8-08BB-FE82-43E7261EB905">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>D55A9AD6-FB8D-A437-2C4D-597DED3D5CBF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="4FB12E2B-0BEB-2CE8-14E7-5A0EBB87D116">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>7DA5AF3C-D6DD-BDDD-DA76-BD99371D4F5A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="524D1BE5-7F50-570A-7264-CD869D976F54">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>755185C3-0046-3812-8A83-F8C90EAE4687</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_ID" id="78DA6046-AD0F-F31A-8173-2D02324C926F">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>08145DBC-76EC-9B05-5EB5-1C2A87159067</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="589BC197-23C9-3A3B-A7AD-6C0D84C36008" referredColumn="8747EABD-DC47-8FF3-1479-0B27B2CFF795"/>
+</associations>
+</Column>
+<Column name="CAMPAIGN_ID" id="EFED263F-1693-3237-BB50-DDF43394996D">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>81C64BCC-56AF-19BA-444C-3AC3740B768A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C2664C9-EA65-2420-5C78-234FC464FFE7" referredColumn="536AB1EA-A656-3907-BC84-1FB261337090"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="636E869D-1047-4345-CC8D-74D1C3096057" name="CLIENTS_PK">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>4261073B-1688-37EB-5937-F72A8C9C1731</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDB0A539-A4B8-691D-70A8-C04D84D22EFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87E1D8FA-4FBC-A770-5DD7-FC22849DB65B" name="CLIENTS_FK_APPOINTMENTS">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78DA6046-AD0F-F31A-8173-2D02324C926F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9125389-C0FB-EB5E-C300-535BECE71BF5" name="CLIENTS_FK_CAMPAIGNS">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFED263F-1693-3237-BB50-DDF43394996D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0602F15D-80B2-6C6B-24BF-D5EF8D81B0F2" containerWithKeyObject="250D0306-1C2E-2998-17FD-C3C9B1237B8E" localFKIndex="37D4A2D0-E0CD-A706-DCDD-D086628B46DC" name="EMPLOYEES_FK_APPOINTMENTS">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>A1802EC8-5B9B-1C8B-2432-D14326F9639C</importedID>
+<referredTableLongName>UBD3282.APPOINTMENTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FB56D9A0-3D95-7934-F9E8-A38B61FEAFFA</referredTableID>
+<keyObject>EA1E9EE9-B41F-D42B-E7D2-91C7FB24701C</keyObject>
+<referredKeyID>EA1E9EE9-B41F-D42B-E7D2-91C7FB24701C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>APPOINTMENT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

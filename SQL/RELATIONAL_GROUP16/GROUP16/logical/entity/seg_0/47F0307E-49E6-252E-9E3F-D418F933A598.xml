@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47F0307E-49E6-252E-9E3F-D418F933A598" name="COMPANIES">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>7A68B6A8-1DD6-867B-64A0-7DB5F5DBEC12</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COMPANY NAME" id="E26D676D-8ED3-7428-560C-673C50030BEB">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>2D18012C-DCEB-AE6D-4CF5-AE37DAE486DF</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WEB" id="6E502874-1706-F5C7-85A1-9CAA7CBF64E4">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>061FA76B-504B-9747-9F42-C41196E18639</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>88DFD09D-8600-BBBE-BB26-41EBDAB6B1E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADDRESS" id="53DF4249-B4CC-705A-251E-C6A96A3AC2C1">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>C1819A17-43F6-FC5D-F883-4DAD36A70375</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC314754-AD07-8E2A-EB83-93FBF8508F54</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VERTICAL" id="EE816137-D2D8-A23A-03FC-A1836AD021D2">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>D7E187C7-D02A-56D3-B482-3198FDA52414</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<referedAttribute>6220586F-57E6-39A4-182D-BB541921A53F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0CFFF638-C2DB-8D2B-01AC-FDA6828440B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPAIGN ID" id="301AEF1B-7C99-0D5C-CCC2-23C895649F3C">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>AC5DD620-0FB9-ACAD-F277-535F1CFEDB93</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<referedAttribute>3C0AFBE0-979C-A511-6BAF-2652D3F5E4A4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A91025DB-7FF9-3DCB-32E2-E391ED2E5F79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CB3740E-6D3D-4C1D-76AE-3A5C42426269" name="COMPANIES PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>407E6AB3-8833-7036-7FDA-22725C02F895</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E26D676D-8ED3-7428-560C-673C50030BEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

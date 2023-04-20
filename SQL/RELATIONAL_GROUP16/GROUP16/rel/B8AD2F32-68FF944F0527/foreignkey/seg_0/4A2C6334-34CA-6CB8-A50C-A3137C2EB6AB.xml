@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4A2C6334-34CA-6CB8-A50C-A3137C2EB6AB" containerWithKeyObject="7A68B6A8-1DD6-867B-64A0-7DB5F5DBEC12" localFKIndex="2C9BBA70-082A-6A63-0B6B-9760B8D901CC" name="COMPANIES_FK_VERTICAL">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>231A8815-9634-588C-22A2-1167C3C060A5</importedID>
+<referredTableLongName>UBD3282.VERTICAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6331B586-463F-D736-1743-02985EA3F5B5</referredTableID>
+<keyObject>8C8D41A3-66CF-66A9-28CE-9800E8C6B795</keyObject>
+<referredKeyID>8C8D41A3-66CF-66A9-28CE-9800E8C6B795</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VERTICAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

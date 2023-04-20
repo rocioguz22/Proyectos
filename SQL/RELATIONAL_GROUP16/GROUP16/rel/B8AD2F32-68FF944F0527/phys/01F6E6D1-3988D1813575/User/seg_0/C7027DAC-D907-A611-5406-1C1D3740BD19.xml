@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="UBD3282" directorySegmentName="seg_0" id="C7027DAC-D907-A611-5406-1C1D3740BD19">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:35 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<schemaObject>BEB9B70B-4009-C88D-3A88-634F088BA497</schemaObject>
+</UserOraclev10g>

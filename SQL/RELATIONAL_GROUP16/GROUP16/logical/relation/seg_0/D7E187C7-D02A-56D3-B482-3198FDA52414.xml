@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMPANIES_FK_VERTICAL" directorySegmentName="seg_0" id="D7E187C7-D02A-56D3-B482-3198FDA52414">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>4A2C6334-34CA-6CB8-A50C-A3137C2EB6AB</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<sourcePk>332A7753-FBC7-EDA8-51D1-DE97C016753F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>54891C23-EBC6-6345-70B8-8953DF6345C6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>47F0307E-49E6-252E-9E3F-D418F933A598</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

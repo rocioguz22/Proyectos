@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EVENTS_FK_COMPANIES" directorySegmentName="seg_0" id="5E6678F1-D49F-760B-838F-A1B3B6A96B3A">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>FD01DEF8-CF20-D727-7907-AF2EB1411EFF</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<sourcePk>0CB3740E-6D3D-4C1D-76AE-3A5C42426269</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>47F0307E-49E6-252E-9E3F-D418F933A598</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A82E58CC-7238-8DEB-42DD-2F5D6C758C2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

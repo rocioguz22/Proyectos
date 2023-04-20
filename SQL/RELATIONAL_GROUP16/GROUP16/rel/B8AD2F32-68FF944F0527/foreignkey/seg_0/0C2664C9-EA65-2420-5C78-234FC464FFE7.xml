@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C2664C9-EA65-2420-5C78-234FC464FFE7" containerWithKeyObject="161DE5AB-D061-A3A4-F947-3F7420FC795D" localFKIndex="C9125389-C0FB-EB5E-C300-535BECE71BF5" name="CLIENTS_FK_CAMPAIGNS">
+<sourceDDLFile>GRUPO16.sql</sourceDDLFile>
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<importedID>5A22CE9A-1A48-1B25-97BD-75636CB195B5</importedID>
+<referredTableLongName>UBD3282.CAMPAIGNS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>041D8066-6E42-5718-10EE-49FE63ECF5CC</referredTableID>
+<keyObject>900668D7-CFED-8F3E-1DF0-111478FE3BF1</keyObject>
+<referredKeyID>900668D7-CFED-8F3E-1DF0-111478FE3BF1</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CAMPAIGN_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

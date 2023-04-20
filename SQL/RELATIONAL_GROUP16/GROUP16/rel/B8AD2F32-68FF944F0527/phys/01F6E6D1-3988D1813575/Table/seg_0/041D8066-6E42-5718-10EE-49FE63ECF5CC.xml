@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CAMPAIGNS" directorySegmentName="seg_0" id="041D8066-6E42-5718-10EE-49FE63ECF5CC">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<schemaObject>BEB9B70B-4009-C88D-3A88-634F088BA497</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>33295658-A9ED-C96C-4D7E-9C9639306A0B</segment>
+<tableSpace>4BF014A5-5ABB-7F50-B104-04687C988BCC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="07161943-3826-1FF7-05AC-8DF7B0FE4CB0">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="0AF90977-ABCC-0363-93F2-3B7CB6C3F7C2">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDIUM" id="4BD3595C-179D-7326-3646-C3E5BB08034A">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAMPAIGN_ID" id="536AB1EA-A656-3907-BC84-1FB261337090">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERTICAL" id="BC318490-496C-FBC4-FFC9-EAEB03C0CD1E">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CAMPAIGNS_FK_VERTICAL" id="C61553C8-5497-812C-9CF1-96E7381E8620">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CAMPAIGNS_PK" id="900668D7-CFED-8F3E-1DF0-111478FE3BF1">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;UBD3282&quot;.&quot;CAMPAIGN_PK&quot; ON &quot;UBD3282&quot;.&quot;CAMPAIGNS&quot; (&quot;CAMPAIGN_ID&quot;) PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645 PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT) TABLESPACE &quot;TS_ALUMNOS&quot;</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

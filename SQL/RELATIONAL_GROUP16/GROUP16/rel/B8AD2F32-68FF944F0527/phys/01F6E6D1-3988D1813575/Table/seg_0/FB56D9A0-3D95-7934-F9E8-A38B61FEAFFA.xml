@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="APPOINTMENTS" directorySegmentName="seg_0" id="FB56D9A0-3D95-7934-F9E8-A38B61FEAFFA">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<schemaObject>BEB9B70B-4009-C88D-3A88-634F088BA497</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>33295658-A9ED-C96C-4D7E-9C9639306A0B</segment>
+<tableSpace>4BF014A5-5ABB-7F50-B104-04687C988BCC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEDIUM" id="46898BB3-A0D2-BC56-1A77-A7EEC884FB29">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPOINTMENT_ID" id="8747EABD-DC47-8FF3-1479-0B27B2CFF795">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OFFICE" id="984510F5-6C71-286C-BFE5-083E2BC77EF6">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOUR" id="B747CB29-868D-C6B6-104D-A4121FA815D8">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="APPOINTMENTS_PK" id="EA1E9EE9-B41F-D42B-E7D2-91C7FB24701C">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:42:38 UTC</createdTime>
+<ownerDesignName>GROUP16</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;UBD3282&quot;.&quot;APPOINTMENT_PK&quot; ON &quot;UBD3282&quot;.&quot;APPOINTMENTS&quot; (&quot;APPOINTMENT_ID&quot;) PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645 PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT) TABLESPACE &quot;TS_ALUMNOS&quot;</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

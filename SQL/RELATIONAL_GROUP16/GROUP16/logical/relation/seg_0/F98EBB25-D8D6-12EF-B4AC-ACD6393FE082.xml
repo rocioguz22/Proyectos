@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EVENTS_FK_CLIENTS" directorySegmentName="seg_0" id="F98EBB25-D8D6-12EF-B4AC-ACD6393FE082">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-12-22 22:43:12 UTC</createdTime>
+<generatorID>E38A1046-9802-543B-0010-8358CFEF665D</generatorID>
+<ownerDesignName>GROUP16</ownerDesignName>
+<engineerTo>
+<item key="B8AD2F32-46B0-E30A-6155-68FF944F0527" value="true"/>
+</engineerTo>
+<sourcePk>E87BA604-ADA3-CBC2-E609-EF106C6DE58B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EAB9F56-2F06-870E-2BC1-798662ADFBE4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A82E58CC-7238-8DEB-42DD-2F5D6C758C2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
