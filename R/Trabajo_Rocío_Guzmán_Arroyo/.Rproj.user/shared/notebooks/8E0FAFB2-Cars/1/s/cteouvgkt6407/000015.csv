@@ -1,0 +1,141 @@
+"0","fc$implications$filter(rhs=""safety = low"")
+"
+"1","Implication set with"
+"1"," "
+"1","19"
+"1"," "
+"1","implications.
+"
+"1","Rule 1: {doors <= 5more, persons <= more, class <= good, class <= unacc, class <= vgood, class >=
+  acc, class >= good, class >= unacc} -> {buying = high, buying = low, buying = med, buying = vhigh,
+  main = high, main = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2,
+  persons <= 4, lug_boot = big, lug_boot = med, lug_boot = small, safety = high, safety = low, safety
+  = med, class <= acc, class >= vgood}"
+"1","
+"
+"1","Rule 2: {doors <= 5more, persons <= more, class <= acc, class <= good, class <= unacc, class <= vgood,
+  class >= acc, class >= good} -> {buying = high, buying = low, buying = med, buying = vhigh, main
+  = high, main = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2,
+  persons <= 4, lug_boot = big, lug_boot = med, lug_boot = small, safety = high, safety = low, safety
+  = med, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 3: {doors <= 5more, persons <= more, safety = high, class <= unacc, class <= vgood, class >= acc,
+  class >= good, class >= unacc, class >= vgood} -> {buying = high, buying = low, buying = med, buying
+  = vhigh, main = high, main = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4,
+  persons <= 2, persons <= 4, lug_boot = big, lug_boot = med, lug_boot = small, safety = low, safety =
+  med, class <= acc, class <= good}"
+"1","
+"
+"1","Rule 4: {doors <= 5more, persons <= more, safety = high, safety = med, class <= unacc, class <= vgood,
+  class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high, main
+  = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4,
+  lug_boot = big, lug_boot = med, lug_boot = small, safety = low, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 5: {doors <= 5more, persons <= more, lug_boot = med, lug_boot = small, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high,
+  main = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <=
+  4, lug_boot = big, safety = high, safety = low, safety = med, class <= acc, class <= good, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 6: {doors <= 5more, persons <= more, lug_boot = big, lug_boot = small, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high,
+  main = low, main = med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <=
+  4, lug_boot = med, safety = high, safety = low, safety = med, class <= acc, class <= good, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 7: {doors <= 5more, persons <= more, lug_boot = big, lug_boot = med, class <= vgood, class >=
+  acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high, main = low, main =
+  med, main = vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = small,
+  safety = high, safety = low, safety = med, class <= acc, class <= good, class <= unacc, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 8: {main = med, main = vhigh, doors <= 5more, persons <= more, class <= unacc, class <= vgood,
+  class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high, main =
+  low, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med,
+  lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 9: {main = low, main = vhigh, doors <= 5more, persons <= more, class <= unacc, class <= vgood,
+  class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = high, main =
+  med, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med,
+  lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 10: {main = low, main = med, doors <= 5more, persons <= more, class <= vgood, class >= acc} ->
+  {buying = high, buying = low, buying = med, buying = vhigh, main = high, main = vhigh, doors <=
+  2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med, lug_boot =
+  small, safety = high, safety = low, safety = med, class <= acc, class <= good, class <= unacc, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 11: {main = high, main = vhigh, doors <= 5more, persons <= more, class <= unacc, class <= vgood,
+  class >= acc} -> {buying = high, buying = low, buying = med, buying = vhigh, main = low, main =
+  med, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med,
+  lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class >=
+  good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 12: {main = high, main = med, doors <= 5more, persons <= more, class <= vgood, class >= acc}
+  -> {buying = high, buying = low, buying = med, buying = vhigh, main = low, main = vhigh, doors <=
+  2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med, lug_boot =
+  small, safety = high, safety = low, safety = med, class <= acc, class <= good, class <= unacc, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 13: {main = high, main = low, doors <= 5more, persons <= more, class <= vgood, class >= acc}
+  -> {buying = high, buying = low, buying = med, buying = vhigh, main = med, main = vhigh, doors <=
+  2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med, lug_boot =
+  small, safety = high, safety = low, safety = med, class <= acc, class <= good, class <= unacc, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 14: {buying = med, buying = vhigh, doors <= 5more, persons <= more, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = high, buying = low, main = high, main = low, main = med, main =
+  vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot =
+  med, lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 15: {buying = low, buying = vhigh, doors <= 5more, persons <= more, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = high, buying = med, main = high, main = low, main = med, main =
+  vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot =
+  med, lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 16: {buying = low, buying = med, doors <= 5more, persons <= more, class <= vgood, class >= acc}
+  -> {buying = high, buying = vhigh, main = high, main = low, main = med, main = vhigh, doors <=
+  2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot = med, lug_boot =
+  small, safety = high, safety = low, safety = med, class <= acc, class <= good, class <= unacc, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 17: {buying = high, buying = vhigh, doors <= 5more, persons <= more, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = low, buying = med, main = high, main = low, main = med, main =
+  vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot =
+  med, lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 18: {buying = high, buying = med, doors <= 5more, persons <= more, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = low, buying = vhigh, main = high, main = low, main = med, main =
+  vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot =
+  med, lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"
+"1","Rule 19: {buying = high, buying = low, doors <= 5more, persons <= more, class <= unacc, class <=
+  vgood, class >= acc} -> {buying = med, buying = vhigh, main = high, main = low, main = med, main =
+  vhigh, doors <= 2, doors <= 3, doors <= 4, persons <= 2, persons <= 4, lug_boot = big, lug_boot =
+  med, lug_boot = small, safety = high, safety = low, safety = med, class <= acc, class <= good, class
+  >= good, class >= unacc, class >= vgood}"
+"1","
+"

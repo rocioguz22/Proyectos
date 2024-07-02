@@ -1,0 +1,28 @@
+# *Introducción* {.unnumbered}
+
+Se nos pide hacer un analisis exhaustivo a varios dataset que ofrecen datos para poder determinar la veracidad de una cuenta de instagram.
+
+#### **¿Qué debemos tener en cuenta?**
+
+Para poder determinar que detrás de un perfil de Instagram se encuentra la persona que realmente dice ser podemos tomar en cuenta las siguientes circustancias:
+
+1.  El número de seguidores
+
+2.  El número de cuentas seguidas
+
+Las circustancias mencionadas anteriormente deben de tener concordancia
+
+3.  El número de interacciones
+
+4.  La antiguedad de la cuenta
+
+5.  Foto de perfil y biografía
+
+6.  El contenido que se publica en ella
+
+#### **¿Cómo tengo pensado abarcar el problema?**
+
+Para poder abarcar el problema realizaremos un analisis exhaustivo aplicando varias tecnicas al dataset con los datos de 120 cuentas,donde la mitad de ellas son falsas.
+
+A los datos que se vayan obteniendo le haremos una sintesis y finalmente realizaremos una conclusión con los factores claves.
+

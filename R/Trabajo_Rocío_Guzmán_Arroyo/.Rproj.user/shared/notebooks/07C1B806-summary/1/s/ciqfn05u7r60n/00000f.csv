@@ -1,0 +1,17 @@
+"0","fc$scale(""fullname words"", type = ""ordinal"")"
+"0","fc$get_scales(""fullname words"")"
+"1","FormalContext with 5 objects and 5 attributes."
+"1","
+"
+"1","   fullname words <= 0  fullname words <= 1  fullname words <= 2  fullname words <= 3  
+ 0          X                    X                    X                    X           
+ 1                               X                    X                    X           
+ 2                                                    X                    X           
+ 3                                                                         X           
+ 5                                                                                     "
+"1","
+"
+"1","Other attributes are: fullname words <= 5"
+"1"," "
+"1","
+"

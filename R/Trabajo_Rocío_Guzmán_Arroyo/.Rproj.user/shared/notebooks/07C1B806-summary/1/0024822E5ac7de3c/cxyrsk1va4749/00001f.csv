@@ -1,0 +1,25 @@
+"0","library(arules)"
+"0","rules <- apriori(train,  parameter = list(supp = 0.35, conf = 0.09,   "
+"0","target = ""rules"")) "
+"2","Warning: Column(s) 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 not logical or factor. Applying default discretization (see '? discretizeDF')."
+"2","Warning: The calculated breaks are: 0, 1, 1, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 0.22, 0.92
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 0, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 0, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 19, 150
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 0, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 1, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"2","Warning: The calculated breaks are: 0, 0, 1, 1
+  Only unique breaks are used reducing the number of intervals. Look at ? discretize for details."
+"1","Apriori
+"
+"1","
+Parameter specification:
+"

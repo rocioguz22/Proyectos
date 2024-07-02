@@ -1,0 +1,5 @@
+"0","#Libraries"
+"0","library(fcaR)"
+"0","library(arulesViz)"
+"2","Error in library(arulesViz) : there is no package called ‘arulesViz’
+"

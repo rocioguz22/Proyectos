@@ -1,0 +1,182 @@
+"0","fc$implications$filter(lhs = ""description length is Any"")"
+"1","Implication set with"
+"1"," "
+"1","34"
+"1"," "
+"1","implications.
+"
+"1","Rule 1: {fullname words <= 3, fullname words <= 5, description length is Any, #followers is To much}
+  -> {fullname words <= 2}"
+"1","
+"
+"1","Rule 2: {fullname words <= 3, fullname words <= 5, description length is Any, #follows is To much} ->
+  {fullname words <= 2}"
+"1","
+"
+"1","Rule 3: {fullname words <= 3, fullname words <= 5, description length is Any, #posts is Medium} ->
+  {fullname words <= 2}"
+"1","
+"
+"1","Rule 4: {fullname words <= 3, fullname words <= 5, description length is Any, description length
+  is To much} -> {profile pic, fullname words <= 0, fullname words <= 1, fullname words <= 2,
+  name==username, description length is Medium, external URL, #posts is One or less, #posts is
+  Medium, #posts is To much, private, #follows is A bit, #follows is Medium, #follows is To much,
+  #followers is A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 5: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is Any,
+  #followers is Medium, #followers is To much} -> {profile pic, fullname words <= 0, fullname words
+  <= 1, name==username, description length is Medium, description length is To much, external URL,
+  #posts is One or less, #posts is Medium, #posts is To much, private, #follows is A bit, #follows is
+  Medium, #follows is To much, #followers is A bit}"
+"1","
+"
+"1","Rule 6: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is Any,
+  #followers is A bit, #followers is Medium} -> {profile pic, fullname words <= 0, fullname words
+  <= 1, name==username, description length is Medium, description length is To much, external URL,
+  #posts is One or less, #posts is Medium, #posts is To much, private, #follows is A bit, #follows is
+  Medium, #follows is To much, #followers is To much}"
+"1","
+"
+"1","Rule 7: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is Any,
+  #follows is A bit, #followers is Medium} -> {profile pic}"
+"1","
+"
+"1","Rule 8: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is Any,
+  #posts is Medium, #followers is Medium} -> {profile pic}"
+"1","
+"
+"1","Rule 9: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is Any,
+  #posts is One or less, #followers is Medium} -> {fullname words <= 1}"
+"1","
+"
+"1","Rule 10: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  description length is Any, #follows is Medium, #followers is To much} -> {#posts is One or less}"
+"1","
+"
+"1","Rule 11: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  description length is Any, #follows is A bit, #follows is Medium} -> {profile pic, fullname
+  words <= 0, name==username, description length is Medium, description length is To much, external
+  URL, #posts is One or less, #posts is Medium, #posts is To much, private, #follows is To much,
+  #followers is A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 12: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  description length is Any, #posts is Medium, #follows is To much, #followers is To much} ->
+  {fullname words <= 0}"
+"1","
+"
+"1","Rule 13: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, description length is Any} -> {#posts is One or less, #follows is Medium,
+  #followers is A bit}"
+"1","
+"
+"1","Rule 14: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #followers is To much} -> {#follows is To much}"
+"1","
+"
+"1","Rule 15: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <=
+  3, fullname words <= 5, description length is Any, #followers is Medium} -> {profile pic,
+  name==username, description length is Medium, description length is To much, external URL, #posts
+  is One or less, #posts is Medium, #posts is To much, private, #follows is A bit, #follows is
+  Medium, #follows is To much, #followers is A bit, #followers is To much}"
+"1","
+"
+"1","Rule 16: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #followers is A bit} -> {#posts is One or less,
+  #follows is A bit}"
+"1","
+"
+"1","Rule 17: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #follows is To much} -> {#followers is To much}"
+"1","
+"
+"1","Rule 18: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <=
+  3, fullname words <= 5, description length is Any, #follows is Medium} -> {profile pic,
+  name==username, description length is Medium, description length is To much, external URL, #posts
+  is One or less, #posts is Medium, #posts is To much, private, #follows is A bit, #follows is To
+  much, #followers is A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 19: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #follows is A bit} -> {#posts is One or less,
+  #followers is A bit}"
+"1","
+"
+"1","Rule 20: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #posts is Medium} -> {#follows is To much,
+  #followers is To much}"
+"1","
+"
+"1","Rule 21: {fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words <= 3,
+  fullname words <= 5, description length is Any, #posts is One or less} -> {#follows is A bit,
+  #followers is A bit}"
+"1","
+"
+"1","Rule 22: {profile pic, fullname words <= 3, fullname words <= 5, description length is Any} ->
+  {fullname words <= 2}"
+"1","
+"
+"1","Rule 23: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #followers is To much} -> {#follows is To much}"
+"1","
+"
+"1","Rule 24: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #follows is To much, #followers is Medium} -> {#posts is Medium}"
+"1","
+"
+"1","Rule 25: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #posts is To much, #followers is A bit} -> {fullname words <= 0, fullname words
+  <= 1, name==username, description length is Medium, description length is To much, external URL,
+  #posts is One or less, #posts is Medium, private, #follows is A bit, #follows is Medium, #follows
+  is To much, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 26: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #posts is To much, #follows is To much} -> {fullname words <= 1, #followers is To
+  much}"
+"1","
+"
+"1","Rule 27: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #posts is To much, #follows is A bit} -> {#followers is Medium}"
+"1","
+"
+"1","Rule 28: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #posts is Medium, #posts is To much} -> {fullname words <= 0, fullname words <= 1,
+  name==username, description length is Medium, description length is To much, external URL, #posts
+  is One or less, private, #follows is A bit, #follows is Medium, #follows is To much, #followers is
+  A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 29: {profile pic, fullname words <= 2, fullname words <= 3, fullname words <= 5, description
+  length is Any, #posts is One or less, #posts is To much} -> {fullname words <= 0, fullname words
+  <= 1, name==username, description length is Medium, description length is To much, external URL,
+  #posts is Medium, private, #follows is A bit, #follows is Medium, #follows is To much, #followers
+  is A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 30: {profile pic, fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words
+  <= 5, description length is Any, #posts is To much, #follows is Medium} -> {#followers is Medium}"
+"1","
+"
+"1","Rule 31: {profile pic, fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words
+  <= 5, description length is Any, #posts is Medium, #follows is To much} -> {#followers is Medium}"
+"1","
+"
+"1","Rule 32: {profile pic, fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words
+  <= 5, description length is Any, #posts is One or less, #followers is Medium} -> {#follows is
+  Medium}"
+"1","
+"
+"1","Rule 33: {profile pic, fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words
+  <= 5, description length is Any, #posts is One or less, #follows is To much} -> {fullname words
+  <= 0, name==username, description length is Medium, description length is To much, external URL,
+  #posts is Medium, #posts is To much, private, #follows is A bit, #follows is Medium, #followers is
+  A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 34: {profile pic, fullname words <= 0, fullname words <= 1, fullname words <= 2, fullname words
+  <= 3, fullname words <= 5, description length is Any} -> {#posts is To much, #follows is To much,
+  #followers is To much}"
+"1","
+"

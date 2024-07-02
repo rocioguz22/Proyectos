@@ -1,0 +1,1 @@
+"0","reglas <- falsas %>% select(`profile pic`, `fullname words`, `name==username`, `description length`,`#posts`, `#follows`, `#followers`)"

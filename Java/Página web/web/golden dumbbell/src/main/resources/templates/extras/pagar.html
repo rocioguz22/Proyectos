@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagar</title>
+    <style>
+        body {
+            background-image: url('/img/retrato-joven-deportista-entrenando-pesas-aisladas-sobre-fondo-azul-neon.jpg');
+             background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+           @font-face {
+    font-family: 'Roman SD';
+    src: url('/img/Gobold Regular.otf') format('truetype');
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-right: 10px;
+    margin-bottom: -700px; /* añade un margen inferior negativo */
+}
+
+form {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        table {
+
+            border-collapse: collapse;
+            width: 400px;
+            max-width: 90%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-left: 250px;
+        }
+
+        th {
+            font-family: 'Roman SD', sans-serif;
+            font-weight: bold;
+            background-color: #ecd448;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        td {
+
+            padding: 10px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            border: 1px solid #c0c0c0;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            background-color: #55b9f3;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #1795d4;
+        }
+    </style>
+</head>
+<body>
+<div class="image-container">
+    <img src="/img/icono-removebg-preview.png" style="position: absolute; top: 0; right: 80; height: 300x;"></div>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Total a pagar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${total}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<form>
+    <h1>Finalizar compra</h1>
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" required>
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" required>
+    <label for="direccion">Dirección de envío</label>
+    <input type="text" id="direccion" name="direccion" required>
+    <label for="metodo-pago">Método de pago</label>
+    <select id="metodo-pago" name="metodo-pago">
+        <option value="tarjeta-credito">Tarjeta de crédito</option>
+        <option value="paypal">PayPal</option>
+    </select>
+    <label for="terminos-condiciones">
+        <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones" required>
+        Acepto los términos y condiciones
+    </label>
+    <button type="submit" class="checkout-btn">Finalizar compra</button>
+</form>
+</body>
+</html>
+

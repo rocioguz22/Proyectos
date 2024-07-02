@@ -1,0 +1,76 @@
+"0","fc$get_scales(c(""#posts"", ""#followers"",""#follows"",""description length""))"
+"1","$`#posts`
+"
+"1","FormalContext with 17 objects and 3 attributes."
+"1","
+"
+"1","    #posts is One or less  #posts is Medium  #posts is To much  
+  0           X                                                 
+  1           X                                                 
+  2                                X                            
+  3                                X                            
+  4                                X                            
+  5                                X                            
+  6                                X                            
+  8                                                  X          
+ 13                                                  X          
+ 15                                                  X          "
+"1","
+"
+"1","
+"
+"1","$`#followers`
+"
+"1","FormalContext with 50 objects and 3 attributes."
+"1","
+"
+"1","    #followers is A bit  #followers is Medium  #followers is To much  
+  0          X                                                        
+  9          X                                                        
+ 10          X                                                        
+ 13          X                                                        
+ 16          X                                                        
+ 17          X                                                        
+ 19          X                                                        
+ 21          X                                                        
+ 22          X                                                        
+ 23          X                                                        "
+"1","
+"
+"1","
+"
+"1","$`#follows`
+"
+"1","FormalContext with 53 objects and 3 attributes."
+"1","
+"
+"1","    #follows is A bit  #follows is Medium  #follows is To much  
+  1         X                                                   
+  2         X                                                   
+  7         X                                                   
+ 15         X                                                   
+ 18         X                                                   
+ 22         X                                                   
+ 24         X                                                   
+ 25         X                                                   
+ 30         X                                                   
+ 31         X                                                   "
+"1","
+"
+"1","
+"
+"1","$`description length`
+"
+"1","FormalContext with 5 objects and 3 attributes."
+"1","
+"
+"1","     description length is Any  description length is Medium  description length is To much  
+   0             X                                                                           
+  14                                                                        X                
+  20                                                                        X                
+  58                                                                        X                
+ 112                                                                        X                "
+"1","
+"
+"1","
+"

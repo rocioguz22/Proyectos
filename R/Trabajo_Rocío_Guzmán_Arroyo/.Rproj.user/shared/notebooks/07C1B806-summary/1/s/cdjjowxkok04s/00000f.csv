@@ -1,0 +1,3 @@
+"0","falsas <- falsas %>%"
+"0","  mutate(ratio = ifelse(is.infinite(`#follows`/`#followers`),0,`#follows`/`#followers`))"
+"0","falsas"

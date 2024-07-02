@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Si te gusta cocinar</title>
+    <style>
+        body {
+            background-image: url('/img/comida4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         @font-face {
+    font-family: 'Roman SD';
+    src: url('/img/Gobold Regular.otf') format('truetype');
+}
+           h1 {
+      font-family: 'Roman SD', sans-serif;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      font-size: 3em;
+      color: #fff;
+    }
+
+    h3 {
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      display: inline-block: center;
+      width: auto;
+      font-size: 1.5em;
+      margin-top: 60px;
+    }
+        table {
+            margin: 0 auto;
+            background-color: white;
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+        thead tr {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Si te gusta cocinar</h1>
+
+
+<h3>Desayuno</h3>
+
+<table>
+    <thead>
+    <tr><td>Nombre</td><td>Gramos</td></tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${desayunocuatro}">
+        <td th:text="${r.name}"></td>
+        <td th:text="${r.gramos}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Almuerzo</h3>
+
+<table>
+    <thead>
+    <tr><td>Nombre</td><td>Gramos</td></tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${almuerzocuatro}">
+        <td th:text="${r.name}"></td>
+        <td th:text="${r.gramos}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Snack</h3>
+
+<table>
+    <thead>
+    <tr><td>Nombre</td><td>Gramos</td></tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${snackcuatro}">
+        <td th:text="${r.name}"></td>
+        <td th:text="${r.gramos}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Cena</h3>
+
+<table>
+    <thead>
+    <tr><td>Nombre</td><td>Gramos</td></tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${cenacuatro}">
+        <td th:text="${r.name}"></td>
+        <td th:text="${r.gramos}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

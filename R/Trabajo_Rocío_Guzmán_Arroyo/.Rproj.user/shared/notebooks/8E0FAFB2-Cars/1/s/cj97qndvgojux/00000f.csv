@@ -1,0 +1,55 @@
+"0","fc$get_scales(c(""persons"", ""doors"",""main"",""lug_boot""))"
+"1","$persons
+"
+"1","FormalContext with 3 objects and 3 attributes."
+"1","
+"
+"1","      persons <= 2  persons <= 4  persons <= more  
+    2       X             X              X         
+    4                     X              X         
+ more                                    X         "
+"1","
+"
+"1","
+"
+"1","$doors
+"
+"1","FormalContext with 4 objects and 4 attributes."
+"1","
+"
+"1","       doors <= 2  doors <= 3  doors <= 4  doors <= 5more  
+     2      X           X           X             X        
+     3                  X           X             X        
+     4                              X             X        
+ 5more                                            X        "
+"1","
+"
+"1","
+"
+"1","$main
+"
+"1","FormalContext with 4 objects and 4 attributes."
+"1","
+"
+"1","       main = high  main = low  main = med  main = vhigh  
+  high      X                                             
+   low                   X                                
+   med                               X                    
+ vhigh                                            X       "
+"1","
+"
+"1","
+"
+"1","$lug_boot
+"
+"1","FormalContext with 3 objects and 3 attributes."
+"1","
+"
+"1","       lug_boot = big  lug_boot = med  lug_boot = small  
+   big        X                                          
+   med                        X                          
+ small                                         X         "
+"1","
+"
+"1","
+"

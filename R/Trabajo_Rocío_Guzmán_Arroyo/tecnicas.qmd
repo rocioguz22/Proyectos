@@ -1,0 +1,15 @@
+# Técnicas a realizar
+
+Para realizar este trabajo de investigación el profesor nos propone aplicar diferentes técnicas y métodos:
+
+-   Análisis exploratorio de datos
+
+-   Visualización de datos
+
+-   Reglas de asociación
+
+-   FCA
+
+-   Regresión
+
+-   Series Temporales

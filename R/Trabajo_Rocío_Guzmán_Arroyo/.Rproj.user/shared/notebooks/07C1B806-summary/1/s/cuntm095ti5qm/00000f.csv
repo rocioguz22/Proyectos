@@ -1,0 +1,40 @@
+"0","fc$implications$filter(lhs = ""name==username"")"
+"1","Implication set with"
+"1"," "
+"1","7"
+"1"," "
+"1","implications.
+"
+"1","Rule 1: {fullname words <= 5, name==username} -> {fullname words <= 1, fullname words <= 2, fullname
+  words <= 3}"
+"1","
+"
+"1","Rule 2: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, #followers is To much} -> {description length is To much}"
+"1","
+"
+"1","Rule 3: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, #follows is To much} -> {description length is To much, #posts is Medium,
+  #followers is To much}"
+"1","
+"
+"1","Rule 4: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, #posts is Medium} -> {description length is To much, #follows is To much,
+  #followers is To much}"
+"1","
+"
+"1","Rule 5: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, description length is To much, #follows is Medium, #followers is To much} ->
+  {profile pic, #posts is To much}"
+"1","
+"
+"1","Rule 6: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, description length is Any} -> {#posts is One or less, #follows is Medium,
+  #followers is A bit}"
+"1","
+"
+"1","Rule 7: {profile pic, fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words
+  <= 5, name==username} -> {description length is To much, #posts is To much, #follows is Medium,
+  #followers is To much}"
+"1","
+"

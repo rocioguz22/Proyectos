@@ -1,0 +1,8 @@
+"0","reglas <- as(reglas, ""transactions"")"
+"0","# Ejecutar algoritmo Apriori"
+"0","r1 <- apriori(reglas, parameter = list(support = 0.1, confidence = 0.5))"
+"1","Apriori
+"
+"1","
+Parameter specification:
+"

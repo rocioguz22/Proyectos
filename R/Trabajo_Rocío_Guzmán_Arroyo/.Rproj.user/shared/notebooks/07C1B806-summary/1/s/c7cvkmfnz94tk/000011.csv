@@ -1,0 +1,2 @@
+"0","r3 <- subset(r1,support > 0.7 & lift > 1)"
+"0","inspect(head(r3))"

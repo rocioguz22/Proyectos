@@ -1,0 +1,4 @@
+"0","reglas$`profile pic` <- ifelse(reglas$`profile pic` == 0, ""No"", ""Sí"")"
+"0","reglas$`name==username` <- ifelse(reglas$`name==username` == 0, ""No"", ""Sí"")"
+"0","reglas$`description length`<- ifelse(reglas$`description length` == 0, ""No"", ""Sí"")"
+"0","reglas"

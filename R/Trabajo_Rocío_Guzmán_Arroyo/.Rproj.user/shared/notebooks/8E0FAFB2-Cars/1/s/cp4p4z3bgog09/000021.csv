@@ -1,0 +1,29 @@
+"0","fc$scale(""class"", type = ""Biordinal"")"
+"0","fc$scale(""buying"", type = ""Nominal"")"
+"0","fc$scale(""main"", type = ""Nominal"")"
+"0","fc$scale(""doors"", type = ""Ordinal"")"
+"0","fc$scale(""persons"", type = ""Ordinal"")"
+"0","fc$scale(""safety"", type = ""Nominal"")"
+"0","fc$scale(""lug_boot"", type = ""Nominal"")"
+"0","fc$print()"
+"1","FormalContext with 1728 objects and 29 attributes."
+"1","
+"
+"1","    buying = high  buying = low  buying = med  buying = vhigh  main = high  main = low  main = med  
+  1                                                   X                                             
+  2                                                   X                                             
+  3                                                   X                                             
+  4                                                   X                                             
+  5                                                   X                                             
+  6                                                   X                                             
+  7                                                   X                                             
+  8                                                   X                                             
+  9                                                   X                                             
+ 10                                                   X                                             "
+"1","
+"
+"1","Other attributes are: main = vhigh, doors <= 2, doors <= 3, doors <= 4, doors <= 5more, persons <=
+2, ..."
+"1"," "
+"1","
+"

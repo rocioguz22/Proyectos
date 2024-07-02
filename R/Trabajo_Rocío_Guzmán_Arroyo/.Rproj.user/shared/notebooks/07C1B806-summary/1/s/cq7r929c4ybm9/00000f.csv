@@ -1,0 +1,17 @@
+"0","library(arules)"
+"2","Loading required package: Matrix
+"
+"2","
+Attaching package: ‘arules’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    recode
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    abbreviate, write
+
+"

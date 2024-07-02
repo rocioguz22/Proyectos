@@ -1,0 +1,113 @@
+---
+title: "Reglas de Asociación - Ejercicio evaluable 2"
+author: "Ángel Mora"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+ 
+
+1. Cargar en R el dataset Titanic (titanic.raw.rdata en CV)
+
+```{r}
+load("titanic.raw.rdata")
+```
+
+
+2. Utilizar algoritmo apriori para obtener las reglas de asociación con confianza 0.001 y soporte 0.01. LLamar estas reglas *r1*. 
+
+```{r}
+r1 <- apriori(titanic.raw,parameter = list(conf = 0.001, supp = 0.01))
+```
+
+Siempre, si no encuentras reglas modifica estos valores. 
+
+ 
+3. Elimina la redundancia y guarda el conjunto de reglas no redundantes en una variable. (0.5 puntos) 
+
+```{r}
+sum(is.redundant(r1))
+r2 <- r1[which(is.redundant(r1))]
+inspect(head(r2))
+```
+
+4. Encontrar las reglas que contienen Survived=No (o a derecha o a izquierda) (1 punto) 
+
+```{r}
+sub1 <- subset(r2, lhs %pin% "Survived=No" | rhs %pin% "Survived=No")
+length(sub1)
+inspect(head(sub1))
+```
+
+5. Visualiza la parte derecha de la regla que tiene más soporte (0.5 puntos) 
+
+```{r}
+max <- max(quality(r2)$support,na.rm=FALSE)
+r5 <- subset(r2,support == max)
+der <- rhs(r5)
+inspect(der)
+```
+
+6. Calcula las reglas que son significativas según el test de Fisher. Muéstralas.  (1 punto) 
+```{r}
+inspect(head(r2[is.significant(r2, method = "fisher")]))
+```
+
+7. Mostrar los 5 itemsets más frecuentes generados con apriori con soporte 0.01 y confianza mayor que 0.2 (1 punto)
+```{r}
+r7 <- apriori(titanic.raw,parameter = list(conf = 0.25, supp = 0.01))
+r7 <- split(f=quality(r7)$support,x=quality(r7)$confidence)
+r7 <- as(r7,"transactions")
+itemFrequency(r7,topN = 5)
+```
+
+8. Seleccionar las reglas de r1 con Age=Adult en la derecha y lift>1, guardarlas en R1_age_adult (1 punto) 
+
+```{r}
+R1_age_adult <- subset(r1,rhs %pin% "Age=Adult" & lift > 1)
+```
+9. Seleccionar las reglas de r1 con Age= (la que sea) en la derecha y lift>1, guardarlas en r1_age. (1 punto) 
+```{r}
+r1_age <- subset(r1,rhs %pin% "Age=" & lift > 1)
+inspect(r1_age)
+```
+
+
+10. Seleccionar solo las reglas de r1 con Age=Adult y Survived=No en la derecha y lift>1, guardarlas en r1_age. (1 punto) 
+
+```{r}
+r1_age <- subset(r1,rhs %pin% "Survived=No" & lift > 1 | rhs %pin% "Age=Adult"  & lift > 1)
+inspect(r1_age)
+```
+
+
+11. Ordenar las reglas de r1_age por lift.  (1 punto) 
+
+```{r}
+reglasPorLift <- sort(r1_age, by = "lift")
+```
+
+
+12. ¿Cual es el soporte de la regla de posición 2 (r1)? (comando que calcule el soporte y de resultado no vale mirar soporte y decirlo)  (1 punto) 
+
+```{r}
+quality(r1)$support[2]
+```
+
+
+13. Muestra por pantalla los atributos de la parte derecha de la regla de mayor soporte (comando que calcule lo que te pido, no vale mirar el resultado y decirlo)  (1 punto) 
+
+```{r}
+
+```
+
+14. Ordene las reglas extraídas inicialmente por confianza; elige una regla aleatoriamente entre todas (regla num);  seleccione el atributo a la derecha de la regla número num. Calcule cuántas transacciones del conjunto de datos original contienen este atributo.  (2 puntos - extra - ejercicio adicional subir nota - solo si se hace el examen completo - este apartado debe ser el último)  
+
+```{r}
+
+```
+
+

@@ -1,0 +1,11 @@
+"0","library(fcaR)
+"
+"2","
+Attaching package: ‘fcaR’
+
+"
+"2","The following object is masked from ‘package:Matrix’:
+
+    %&%
+
+"

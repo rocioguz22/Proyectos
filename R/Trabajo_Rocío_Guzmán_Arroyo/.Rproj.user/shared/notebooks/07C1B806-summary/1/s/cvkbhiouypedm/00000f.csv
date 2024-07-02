@@ -1,0 +1,3 @@
+"0","ggplot((test %>% filter(fake == 0)), aes(x = `description length`)) +"
+"0","  geom_density(fill = ""skyblue"", color = ""black"") +"
+"0","  ggtitle(""Densidad de Longitud de Descripción"")"

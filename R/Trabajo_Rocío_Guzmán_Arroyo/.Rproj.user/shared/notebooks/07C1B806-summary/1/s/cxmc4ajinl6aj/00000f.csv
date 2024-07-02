@@ -1,0 +1,4 @@
+"0","ggplot(test, aes(x = factor(fake))) +"
+"0","  geom_bar(fill = c(""skyblue"", ""pink""), color = ""black"") +"
+"0","  labs(x = ""Verdaderas y Falsas"", y = ""Número de Perfiles"") +"
+"0","  ggtitle(""Cantidad de Perfiles Falsos y Verdaderos"")"

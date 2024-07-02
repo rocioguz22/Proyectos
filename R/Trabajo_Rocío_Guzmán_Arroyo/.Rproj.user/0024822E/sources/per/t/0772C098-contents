@@ -1,0 +1,398 @@
+# Estudio de los datasets
+
+```{r WARNING = FALSE}
+library(readr)
+library(dplyr)
+test <- read_csv("test.csv")
+```
+
+## *Análisis exploratorio de datos*
+
+En este apartado haremos un estudio exhaustivo del dataset fijandonos detenidamente en todas sus variables y valores.
+
+```{r}
+variables <- colnames(test)
+variables
+```
+
+Nuestro dataset consta de varias columns como podemos ver anteriormente,a continuación haremos una breve explicación del significado de cada una de ellas y actualizaremos el dataset quedandonos solo con las que consideramos más relevantes.
+
+-   Profile pic - Nos indica si la cuenta tiene foto de perfil o no
+
+-   Nums/length username - Porcentaje de números presentes en el nombre de usuario
+
+-   Fullname words - Pálabras del nombre de usuario
+
+-   Nums/length fullname - Números presentes en el nombre completo
+
+-   Name==username" - Indica si el nombre de usuario es exactamente igual al nombre completo
+
+-   Description length - Longitud de la descripción
+
+-   External URL - Si tiene o no URLs externas
+
+-   Private - Indica si tiene o no la cuenta privada
+
+-   #Posts - Número de publicaciones
+
+-   #Followers - Número de seguidores
+
+-   #Follows - Número de cuentas seguidas
+
+-   Fake - Indica si es falsa o no
+
+Otro factor a tener en cuenta antes de meternos en profundidad es ver si hay valores NA
+
+```{r}
+ifelse(sum(is.na(test)) == 0,"No hay valores NA","El dataset contiene valores NA")
+```
+
+Descripcion y valores que alcanzan
+
+La mayoría de filas de las columas del dataset ocupan valores binarios(0 para indicar que la condición es falsa y 1 para indicar que la condición es verdadera).
+
+Las columnas que no tienen esa estructura son:follows,followers,posts,nums/length fullname,nums/length username y fullname words.
+
+Para centralizar un poco más nuestro estudio vamos a ver que porcentaje de las cuentas registradas son falsas y como hemos mencionado anteriormente seleccionar las columnas que consideramos más relaventes.
+
+Creamos un dataset llamado "falsas" donde guardamos todas lascuentas falsas para analizar posteriormente sus características,además centraremos el estudio en él.
+
+```{r}
+falsas <- test %>% filter (fake == 1) %>% select(c(`profile pic`,`fullname words`,`name==username`,`description length`,`external URL`,`#posts`,`private`,`#follows`,`#followers`))
+falsas
+```
+
+```{r}
+(nrow(falsas)/nrow(test))*100
+```
+
+Vemos valores para las columnas no binarias:
+
+```{r}
+summary(falsas$`fullname words`)
+```
+
+Em base a estos resultados un poco confunsos donde no podemos sacar mucha conclusión más que el nombre completo en las cuentas falsas suele constar de una palabra profundizamos un poco más el estudio.
+
+```{r}
+unique(falsas$`fullname words`)
+```
+
+Antes hemos observado que hay cuentas donde no se indica el nombre así vamos a ver el porcentaje sobre el dataset para ver si es un valor importante.
+
+```{r}
+(nrow(falsas %>% filter(`fullname words` == 0))/nrow(falsas))*100
+```
+
+Podemos observar que no es un dato muy concluyente,pero me parece curioso observar si ocurre este fenómeno en las cuentas que no sean falsas.
+
+```{r}
+(nrow(test %>% filter(`fullname words` == 0, fake == 0))/nrow(test %>% filter(fake == 0)))*100
+```
+
+Mucho menos pero también ocurre así que nos dice poco este parametro. Seguimos realizando el mismo proceso,pero obtenemos valoresmuy dispares.
+
+```{r}
+summary(falsas$`#posts`)
+```
+
+```{r}
+unique(falsas$`#posts`)
+```
+
+Comparamos con las cuentas que no son falsas
+
+```{r}
+unique((test %>% filter(fake == 0))$`#posts`)
+```
+
+Vemos que podemos encontrarnos cuentas que no son falsas con los mismos número de publicaciones que una cuenta que si lo es pero si que es un dato importante a tener en cuenta ya que si el número de posts es muy alto nuestras dudas deberian disminuir.
+
+Por otro lado me parece interesante realizar una comparación entre los seguidores que tienen las cuentas falsas y las cantidad de cuentas a las que siguen.
+
+```{r}
+summary(falsas$`#follows`)
+```
+```{r}
+summary(falsas$`#followers`)
+```
+
+```{r}
+unique(falsas$`#follows`)
+```
+```{r}
+unique(falsas$`#followers`)
+```
+
+Creamos una nueva columna en falsas donde hagamos el ratio entre los seguidos y los seguidores
+
+```{r}
+falsas <- falsas %>%
+  mutate(ratio = ifelse(is.infinite(`#follows`/`#followers`),0,`#follows`/`#followers`))
+falsas
+```
+
+Y vemos que ha sucedido
+
+```{r}
+summary(falsas$`ratio`)
+```
+
+Podemos concluir con estos datos que el número de personas a las que siguen las cuentas falsas es superior al número de personas que lo siguen.
+
+A continuación haremos el mismo procedimiento con las cuentas que no son falsas para sacar conclusiones más concretas.
+
+```{r}
+summary(test %>%
+  filter(fake == 0) %>%
+  mutate(ratio = ifelse(is.infinite(`#follows`/`#followers`), 0,
+                        `#follows`/`#followers`)) %>% select(ratio))
+
+```
+
+En este caso vemos que como norma general las cuentas que no son falsas tienen más seguidores que seguidos.
+
+Por último todas las cuentas falsas son privadas
+
+```{r}
+nrow(falsas %>% filter(private == 1))
+```
+
+## *Visualización de datos*
+
+Algo interesante sería crear gráficas para ver de forma más visible los datos de nuestro dataset.
+
+Primero cargamos la librería que vamos a utilizar
+
+```{r}
+library(ggplot2)
+```
+
+Comparamos la longitud de las descripciones,
+
+
+```{r}
+ggplot(falsas, aes(x = `description length`)) +
+  geom_density(fill = "skyblue", color = "black") +
+  ggtitle("Densidad de Longitud de Descripción")
+```
+
+```{r}
+ggplot((test %>% filter(fake == 0)), aes(x = `description length`)) +
+  geom_density(fill = "skyblue", color = "black") +
+  ggtitle("Densidad de Longitud de Descripción")
+```
+Como hemos inidicado en la parte anterior el 50%  de las filas de nuestro dataset hace referencia a cuentas falsas a continuacióno podemos verlo de forma más visual
+
+```{r}
+ggplot(test, aes(x = factor(fake))) +
+  geom_bar(fill = c("skyblue", "pink"), color = "black") +
+  labs(x = "Verdaderas y Falsas", y = "Número de Perfiles") +
+  ggtitle("Cantidad de Perfiles Falsos y Verdaderos")
+```
+```{r}
+ggplot((test %>% filter(fake == 0)), aes(x = `#followers`, y = `#follows`)) +
+  geom_point(alpha = 0.5) +
+  ggtitle("Relación entre Seguidores y Seguidos")
+```
+```{r}
+ggplot(falsas, aes(x = `#followers`, y = `#follows`)) +
+  geom_point(alpha = 0.5) +
+  ggtitle("Relación entre Seguidores y Seguidos")
+```
+
+## *Reglas de asociación*
+
+```{r}
+library(arules)
+```
+Para continuar con el estudio y poder aplicar reglas de asociación debemos eliminar las columnas que no nos digan nada(aquellas que tienen en todas sus columnas el mismo valor) para poder discretizar correctamente.
+
+```{r}
+unique(falsas$`external URL`)
+unique(falsas$private)
+```
+
+Seguimos aplicando variaciones para poder crear un buen conjunto de reglas:
+
+```{r}
+reglas <- falsas %>% select(`profile pic`, `fullname words`, `name==username`, `description length`,`#posts`, `#follows`, `#followers`)
+```
+
+Nos centramos en las columnas que nos ofrencen valores y utilizamos la función cut,para saber que valores tomar hacemos un summary.
+
+```{r}
+#Lo utilizo para determinar los rangos que ponerle al cut
+summary(reglas$`#posts`)
+reglas$`#posts`<- cut(reglas$`#posts`, breaks = c(-1, 1, 6, 82), labels = c("One or less", "Medium", "To much"))
+```
+
+```{r}
+#Lo utilizo para determinar los rangos que ponerle al cut
+summary(reglas$`fullname words`)
+reglas$`fullname words`<- cut(reglas$`fullname words`, breaks = c(-1, 1, 2,5), labels = c("Short", "A few", "To much"))
+```
+Y hacemos lo mismo con followers y follows
+
+```{r}
+summary(reglas$`#follows`)
+reglas$`#follows`<- cut(reglas$`#follows`, breaks = c(0, 160, 854, 7500), labels = c("A bit", "Medium", "To much"))
+```
+```{r}
+summary(reglas$`#followers`)
+reglas$`#followers`<- cut(reglas$`#followers`, breaks = c(-1, 70, 230, 3000), labels = c("A bit", "Medium", "To much"))
+```
+Me parece más visual para realizar el analisis de las reglas que el dataset este compuesto en su totalidad de palabras así que voy a sustituir los 0 por no y los 1 por sí.
+
+En la longitud de la descripción hemos hecho una excepción porque me interesa  saber más si tiene o no tiene descripción.
+
+```{r}
+reglas$`profile pic` <- ifelse(reglas$`profile pic` == 0, "No", "Sí")
+reglas$`name==username` <- ifelse(reglas$`name==username` == 0, "No", "Sí")
+reglas$`description length`<- ifelse(reglas$`description length` == 0, "No", "Sí")
+reglas
+```
+
+```{r}
+reglas <- as(reglas, "transactions")
+# Ejecutar algoritmo Apriori
+r1 <- apriori(reglas, parameter = list(support = 0.1, confidence = 0.5))
+r1
+```
+
+Con los cambios que hemos realizado se nos generan 881 reglas lo que considero que es una buena cantidad para empezar a trabajar.
+
+```{r}
+summary(r1)
+inspect(head(r1))
+```
+
+Eliminamos las redundancias
+
+```{r}
+which(!is.redundant(r1))
+r1 <- r1[which(!is.redundant(r1))]
+inspect(head(r1))
+```
+
+Vemos que reglas son más significativas según el test de fisher:
+
+```{r}
+inspect(head(r1[is.significant(r1, method = "fisher")]))
+```
+Cuales son los tres itemps más frecuentes,
+```{r}
+r2 <- sort(r1, by = "count")
+inspect(head(r2,n=3))
+```
+Estos valores nos indican que es muy probable que las cuentas falsas no tengan descripción alguna,y que si una cuenta falsa no tiene descripción lo más seguro es que su nombre de usuario no sea igual a su nombre real.Aunque esto no esta influye sobre la otra por los fift cercanos a uno.
+
+```{r}
+r2 <- sort(r1, by = "support")
+inspect(head(r2,n=1))
+```
+
+Por otra parte veo interesante fijarnos en las reglas menos relevantes y para ello selecciono las 5 menos relevantes y saco conclusiones.
+
+```{r}
+r2 <- sort(r1, by = "support", decreasing = FALSE)
+inspect(head(r2,n=5))
+```
+Podemos ver que estas reglas están fuertemente enlazadas entre sí,pero que aún así no suceden con frecuencia.
+
+Busquemos reglas muy fuertemente enlazadas y con un gran soporte.
+
+```{r}
+r3 <- subset(r1,support > 0.7 & lift > 1)
+inspect(head(r3))
+```
+
+Concluimos con que si una cuenta no tiene descripción probablemente no se haya currado su perfil y su nombre sea inventado, es decir que no coincida con el de usuario y además su nombre conste de pocas palabras.
+
+Estos dos atributos son fuertes indicadores de que la cuenta no es muy veraz.
+
+## *FCA*
+
+```{r}
+library(fcaR)
+fc <- FormalContext$new(falsas)
+```
+
+Como tenemos valores que son distintos de 0 o 1 aplicamos scale para poder trabajar correctamente.
+
+```{r}
+fc$scale("fullname words", type = "ordinal")
+fc$get_scales("fullname words")
+```
+Para los valores enumerados considero que esta es la escala más apropiada mientras que para las demás considero que la más apropiada son los intervalos.
+
+```{r}
+fc$scale("#posts", 
+         type = "interval", 
+         values = c(-1, 1, 6, 82), 
+         interval_names = c("One or less", "Medium", "To much"))
+
+fc$scale("#follows", 
+         type = "interval", 
+         values =  c(0, 160, 854, 7500), 
+         interval_names = c("A bit", "Medium", "To much"))
+
+fc$scale("#followers", 
+         type = "interval", 
+         values = c(-1, 70, 230, 3000), 
+         interval_names = c("A bit", "Medium", "To much"))
+fc$scale("description length", 
+         type = "interval", 
+         values = c(-1, 1, 4, 115), 
+         interval_names = c("Any", "Medium", "To much"))
+```
+
+```{r message = FALSE, warning = FALSE}
+fc$get_scales(c("#posts", "#followers","#follows","description length"))
+```
+
+
+```{r}
+```
+
+
+```{r}
+fc$plot()
+```
+
+```{r}
+fc$find_implications()
+fc$implications
+```
+
+Vamos a empezar a filtar :
+
+```{r message = FALSE, warning = FALSE}
+fc$implications$filter(rhs = "private")
+```
+
+```{r message = FALSE, warning = FALSE}
+fc$implications$filter(lhs = "name==username")
+```
+
+Quiero comparar los dos perfiles posibles en base a la descripción
+
+```{r message = FALSE, warning = FALSE}
+fc$implications$filter(lhs = "description length is To much")
+```
+```{r message = FALSE, warning = FALSE}
+fc$implications$filter(lhs = "description length is Any")
+```
+
+
+
+## *Regresión*
+
+```{r}
+
+
+```
+
+## *Series Temporales*
+
+No veo posible realizar un analisis aplicando esta técnica ya que no hay ninguna marca temporal en el dataset.

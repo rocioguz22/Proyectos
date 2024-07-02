@@ -1,0 +1,2 @@
+"0","covid_dt <- read.csv(""https://raw.githubusercontent.com/ieee8023/covid-chestxray-dataset/master/metadata.csv"")"
+"0",""

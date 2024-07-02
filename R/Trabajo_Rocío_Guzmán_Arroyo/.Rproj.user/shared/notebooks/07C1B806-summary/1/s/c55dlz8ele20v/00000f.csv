@@ -1,0 +1,5 @@
+"0","(nrow(falsas %>% filter(`fullname words` == 0))/nrow(falsas))*100"
+"1","[1]"
+"1"," 8.333333"
+"1","
+"

@@ -1,0 +1,2 @@
+"0","falsas <- test %>% filter (fake == 1) %>% select(c(`profile pic`,`fullname words`,`name==username`,`description length`,`external URL`,`#posts`,`private`,`#follows`,`#followers`))"
+"0","falsas"

@@ -1,0 +1,16 @@
+{
+  "hash": "9a5cf34e0059de0b16431ac2f8c00771",
+  "result": {
+    "markdown": "# *Introducción* {.unnumbered}\n\nSe nos pide hacer un analisis exhaustivo a varios dataset que ofrecen datos para poder determinar la veracidad de una cuenta de instagram.\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

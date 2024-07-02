@@ -1,0 +1,54 @@
+"0","fc$implications$filter(lhs = ""description length is To much"")"
+"1","Implication set with"
+"1"," "
+"1","11"
+"1"," "
+"1","implications.
+"
+"1","Rule 1: {fullname words <= 5, description length is To much} -> {fullname words <= 3}"
+"1","
+"
+"1","Rule 2: {fullname words <= 3, fullname words <= 5, description length is To much, #followers is A
+  bit} -> {fullname words <= 2, #posts is One or less, #follows is A bit}"
+"1","
+"
+"1","Rule 3: {fullname words <= 3, fullname words <= 5, description length is To much, #follows is To
+  much} -> {#posts is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 4: {fullname words <= 3, fullname words <= 5, description length is To much, #follows is A bit}
+  -> {fullname words <= 2, #posts is One or less, #followers is A bit}"
+"1","
+"
+"1","Rule 5: {fullname words <= 3, fullname words <= 5, description length is To much, #posts is Medium}
+  -> {#follows is To much, #followers is To much}"
+"1","
+"
+"1","Rule 6: {fullname words <= 3, fullname words <= 5, description length is To much, #posts is One or
+  less} -> {fullname words <= 2, #follows is A bit, #followers is A bit}"
+"1","
+"
+"1","Rule 7: {fullname words <= 3, fullname words <= 5, description length is Any, description length
+  is To much} -> {profile pic, fullname words <= 0, fullname words <= 1, fullname words <= 2,
+  name==username, description length is Medium, external URL, #posts is One or less, #posts is
+  Medium, #posts is To much, private, #follows is A bit, #follows is Medium, #follows is To much,
+  #followers is A bit, #followers is Medium, #followers is To much}"
+"1","
+"
+"1","Rule 8: {fullname words <= 2, fullname words <= 3, fullname words <= 5, description length is To
+  much, #followers is To much} -> {fullname words <= 1, name==username}"
+"1","
+"
+"1","Rule 9: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  description length is To much} -> {name==username, #followers is To much}"
+"1","
+"
+"1","Rule 10: {fullname words <= 1, fullname words <= 2, fullname words <= 3, fullname words <= 5,
+  name==username, description length is To much, #follows is Medium, #followers is To much} ->
+  {profile pic, #posts is To much}"
+"1","
+"
+"1","Rule 11: {profile pic, fullname words <= 3, fullname words <= 5, description length is To much} ->
+  {#followers is To much}"
+"1","
+"
